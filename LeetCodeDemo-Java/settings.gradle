@@ -1,0 +1,2 @@
+rootProject.name='LeetCodeDemo-Java'
+include ':app'
