@@ -61,6 +61,7 @@ public class LeetCode5 {
      * 最简单直观的方法是遍历字符串，遍历的时候以每个字符为中心向左右两侧扩散
      * 对于奇数，我们以该字符为中心向两边扩散；对于偶数，我们以该字符和下一个字符作为中心字符，然后向两边扩散。
      */
+    // ps : https://www.nowcoder.com/discuss/196952?type=0&order=0&pos=28&page=0
     private int start = 0, maxLen = 0;
 
     public String longestPalindrome2(String s) {
