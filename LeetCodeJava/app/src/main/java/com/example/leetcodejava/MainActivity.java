@@ -17,9 +17,10 @@ public class MainActivity extends AppCompatActivity {
 //        LeetCode520 leetCode520 = new LeetCode520();
 //        leetCode520.detectCapitalUse("TesT");
 
-//        LeetCode5 leetCode5 = new LeetCode5();
+        LeetCode5 leetCode5 = new LeetCode5();
 //        leetCode5.longestPalindrome1("babad");
 //        leetCode5.longestPalindrome1("cbbd");
+        leetCode5.longestPalindrome1("abc");
 
 
 
