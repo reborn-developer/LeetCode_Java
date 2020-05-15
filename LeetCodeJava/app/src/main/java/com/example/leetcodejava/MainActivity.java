@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
 //        leetCode5.longestPalindrome1("cbbd");
 //        leetCode5.longestPalindrome2("babad");
 
-
+//        LeetCode521 leetCode521 = new LeetCode521();
+//        leetCode521.findLUSlength("aba", "cdc");
 
     }
 }
