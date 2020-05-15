@@ -25,5 +25,14 @@ public class MainActivity extends AppCompatActivity {
 //        LeetCode521 leetCode521 = new LeetCode521();
 //        leetCode521.findLUSlength("aba", "cdc");
 
+//        String[] target = {"aba","cbc","eae"};
+//        LeetCode522 leetCode522 = new LeetCode522();
+//        leetCode522.findLUSlength(target);
+
+//        String[] caseStrs = {"aba", "cdc", "eae"};
+//        String[] caseStrs = {"bd", "e", "abc", "ab", "abc"};
+//        LeetCode522 leetCode522 = new LeetCode522();
+//        leetCode522.findLUSlength(caseStrs);
+
     }
 }
