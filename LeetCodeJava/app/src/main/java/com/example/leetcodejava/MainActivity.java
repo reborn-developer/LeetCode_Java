@@ -34,5 +34,8 @@ public class MainActivity extends AppCompatActivity {
 //        LeetCode522 leetCode522 = new LeetCode522();
 //        leetCode522.findLUSlength(caseStrs);
 
+        LeetCode6 leetCode6 = new LeetCode6();
+        leetCode6.convert("LEETCODEISHIRING", 3);
+        leetCode6.convert("LEETCODEISHIRING", 4);
     }
 }
