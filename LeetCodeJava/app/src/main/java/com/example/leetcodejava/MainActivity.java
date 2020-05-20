@@ -4,6 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -34,8 +38,20 @@ public class MainActivity extends AppCompatActivity {
 //        LeetCode522 leetCode522 = new LeetCode522();
 //        leetCode522.findLUSlength(caseStrs);
 
-        LeetCode6 leetCode6 = new LeetCode6();
-        leetCode6.convert("LEETCODEISHIRING", 3);
-        leetCode6.convert("LEETCODEISHIRING", 4);
+//        LeetCode6 leetCode6 = new LeetCode6();
+//        leetCode6.convert("LEETCODEISHIRING", 3);
+//        leetCode6.convert("LEETCODEISHIRING", 4);
+
+
+        List<String> list = new ArrayList<>(Arrays.asList("ale", "apple", "monkey", "plea"));
+        List<String> lis2 = new ArrayList<>(Arrays.asList("a", "b", "c"));
+
+        LeetCode524 leetCode524 = new LeetCode524();
+//        leetCode524.findLongestWord("abpcplea", list);
+        leetCode524.findLongestWord("abpcplea", lis2);
+
+//        leetCode524.findLongestWord2("abpcplea", list);
+
+
     }
 }
