@@ -43,15 +43,15 @@ public class MainActivity extends AppCompatActivity {
 //        leetCode6.convert("LEETCODEISHIRING", 4);
 
 
-        List<String> list = new ArrayList<>(Arrays.asList("ale", "apple", "monkey", "plea"));
-        List<String> lis2 = new ArrayList<>(Arrays.asList("a", "b", "c"));
-
-        LeetCode524 leetCode524 = new LeetCode524();
+//        List<String> list = new ArrayList<>(Arrays.asList("ale", "apple", "monkey", "plea"));
+//        List<String> lis2 = new ArrayList<>(Arrays.asList("a", "b", "c"));
+//        LeetCode524 leetCode524 = new LeetCode524();
 //        leetCode524.findLongestWord("abpcplea", list);
-        leetCode524.findLongestWord("abpcplea", lis2);
-
+//        leetCode524.findLongestWord("abpcplea", lis2);
 //        leetCode524.findLongestWord2("abpcplea", list);
 
-
+        int[] arr = {1,2,4,7,10,11,7,12,6,7,16,18,19};
+        LeetCode16 leetCode16 = new  LeetCode16();
+        leetCode16.subSort(arr);
     }
 }
