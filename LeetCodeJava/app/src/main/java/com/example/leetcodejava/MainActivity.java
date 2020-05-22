@@ -50,8 +50,13 @@ public class MainActivity extends AppCompatActivity {
 //        leetCode524.findLongestWord("abpcplea", lis2);
 //        leetCode524.findLongestWord2("abpcplea", list);
 
-        int[] arr = {1,2,4,7,10,11,7,12,6,7,16,18,19};
-        LeetCode16 leetCode16 = new  LeetCode16();
-        leetCode16.subSort(arr);
+
+//        int[] arr = {1,2,4,7,10,11,7,12,6,7,16,18,19};
+//        LeetCode16 leetCode16 = new  LeetCode16();
+//        leetCode16.subSort(arr);
+
+        int[] array = {3,0,6,1,5};
+        LeetCode274 leetCode274 = new LeetCode274();
+        leetCode274.hIndex(array);
     }
 }

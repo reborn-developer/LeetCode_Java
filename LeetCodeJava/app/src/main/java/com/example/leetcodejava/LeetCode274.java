@@ -1,5 +1,7 @@
 package com.example.leetcodejava;
 
+import java.util.Arrays;
+
 public class LeetCode274 {
     /**
      * LeetCode274.H 指数
@@ -20,9 +22,34 @@ public class LeetCode274 {
      * 提示：如果h有多种可能的值，h指数是其中最大的那个。
      */
 
+
+    /**
+     * 思路:
+     *
+     * 第一次看到这个概念比较难理解，看一下维基百科 的定义。
+     *
+     * H指数的计算基于其研究者的论文数量及其论文被引用的次数。赫希认为：一个人在其所有学术文章中有N篇论文分别被引用了至少N次，他的H指数就是N。
+     * 如美国耶鲁大学免疫学家理查德·弗来沃发表的900篇文章中，有107篇被引用了107次以上，他的H指数是107。
+     *
+     * 可以按照如下方法确定某人的H指数：
+     *
+     * 将其发表的所有SCI论文按被引次数从高到低排序；
+     * 从前往后查找排序后的列表，直到某篇论文的序号大于该论文被引次数。所得序号减一即为H指数。
+     *
+     */
     public int hIndex(int[] citations) {
 
-        return 1;
+        Arrays.sort(citations); // 默认的是从小到大排序，所以后边要倒着遍历
+        int n = 1; // 论文序号
+        //倒着遍历就是从大到小遍历了
+        for (int i = citations.length - 1; i >= 0; i--) {
+            // 论文序号大于该论文的被引次数
+            if (n > citations[i]) {
+                break;
+            }
+            n++;
+        }
+        // 所得序号减一即为H指数。
+        return n - 1;
     }
-
 }
