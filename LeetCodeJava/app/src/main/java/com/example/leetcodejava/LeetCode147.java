@@ -58,7 +58,9 @@ public class LeetCode147 {
         ListNode end = dummy;
         ListNode cur = head;
         while (cur != null) {
-            // 如果是升序，则遍历下一个(head后面的)
+            // 如果是升序，则遍历下一个
+            /// dummy    head
+            /// pre/end  cur
             if (end.val < cur.val) {
                 end.next = cur;
                 end = cur;
