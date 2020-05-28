@@ -59,8 +59,11 @@ public class MainActivity extends AppCompatActivity {
 //        LeetCode274 leetCode274 = new LeetCode274();
 //        leetCode274.hIndex(array);
 
-        LeetCode147 leetCode147 = new LeetCode147();
-        leetCode147.insertionSortList(leetCode147.testCaseNode());
+//        LeetCode147 leetCode147 = new LeetCode147();
+//        leetCode147.insertionSortList(leetCode147.testCaseNode());
+
+        LeetCode148 leetCode148 = new LeetCode148();
+        leetCode148.sortList(leetCode148.testCaseNode());
     }
 }
 
