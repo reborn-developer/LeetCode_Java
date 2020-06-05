@@ -69,10 +69,12 @@ public class MainActivity extends AppCompatActivity {
 //        LeetCode179 leetCode179 = new LeetCode179();
 //        leetCode179.largestNumber(arr);
 
-        int[] arr = {3,2,4,1};
-        LeetCode969 leetCode969 = new LeetCode969();
-        leetCode969.pancakeSort(arr);
+//        int[] arr = {3,2,4,1};
+////        LeetCode969 leetCode969 = new LeetCode969();
+////        leetCode969.pancakeSort(arr);
 
+        LeetCode970 leetCode970 = new LeetCode970();
+        leetCode970.powerfulIntegers(2, 3, 10);
     }
 }
 

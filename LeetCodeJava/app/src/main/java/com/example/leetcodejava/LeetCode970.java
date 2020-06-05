@@ -1,6 +1,9 @@
 package com.example.leetcodejava;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class LeetCode970 {
     /**
@@ -31,12 +34,26 @@ public class LeetCode970 {
      * 1 <= y <= 100
      * 0 <= bound <= 10^6
      */
+
+    /**
+     * 思路：
+     * 根据数学中的换底公式获取到i和j的最大值，这里要注意的是两者中有为1的情况的话要单独处理
+     * 双重循环i和j，得到其中的一个强整数，当已经超过bound时可以跳出内层循环节省时间
+     * 保存的结果用set自动去重，最后转换为list
+     */
     public List<Integer> powerfulIntegers(int x, int y, int bound) {
 
+        int iMax = x == 1 ? 0 : (int)(Math.log(bound-1) / Math.log(x));
+        int jMax = y == 1 ? 0 : (int)(Math.log(bound-1) / Math.log(y));
 
-
-
-
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i <= iMax; i++) {
+            for (int j = 0; j <= jMax; j++) {
+                if (Math.pow(x,i) + Math.pow(y,j) <= bound) {
+                    set.add((int)(Math.pow(x,i) + Math.pow(y,j)));
+                } else break;
+            }
+        }
+        return new ArrayList<>(set);
     }
-
 }
