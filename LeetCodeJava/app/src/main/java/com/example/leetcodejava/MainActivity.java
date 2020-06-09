@@ -73,8 +73,14 @@ public class MainActivity extends AppCompatActivity {
 ////        LeetCode969 leetCode969 = new LeetCode969();
 ////        leetCode969.pancakeSort(arr);
 
-        LeetCode970 leetCode970 = new LeetCode970();
-        leetCode970.powerfulIntegers(2, 3, 10);
+//        LeetCode970 leetCode970 = new LeetCode970();
+//        leetCode970.powerfulIntegers(2, 3, 10);
+
+        int[] num1 = {1,2,2,1};
+        int[] num2 = {2,2};
+        LeetCode350 leetCode350 = new LeetCode350();
+//        leetCode350.intersect(num2, num1);
+        leetCode350.intersect2(num2, num1);
     }
 }
 
