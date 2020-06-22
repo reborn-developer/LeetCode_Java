@@ -82,10 +82,13 @@ public class MainActivity extends AppCompatActivity {
 ////        leetCode350.intersect(num2, num1);
 //        leetCode350.intersect2(num2, num1);
 
-        int[] num1 = {1,2,2,1};
-        int[] num2 = {2,2};
-        LeetCode349 leetCode349 = new LeetCode349();
-        leetCode349.intersection(num1, num2);
+//        int[] num1 = {1,2,2,1};
+//        int[] num2 = {2,2};
+//        LeetCode349 leetCode349 = new LeetCode349();
+//        leetCode349.intersection(num1, num2);
+
+        LeetCode242 leetCode242 = new LeetCode242();
+        leetCode242.isAnagram("anagram", "nagaram");
     }
 }
 
