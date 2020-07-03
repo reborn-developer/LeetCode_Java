@@ -87,8 +87,13 @@ public class MainActivity extends AppCompatActivity {
 //        LeetCode349 leetCode349 = new LeetCode349();
 //        leetCode349.intersection(num1, num2);
 
-        LeetCode242 leetCode242 = new LeetCode242();
-        leetCode242.isAnagram("anagram", "nagaram");
+//        LeetCode242 leetCode242 = new LeetCode242();
+//        leetCode242.isAnagram("anagram", "nagaram");
+
+
+        int[] num = {-10, -3, 0 , 5, 9};
+        LeetCode108 leetCode108 = new LeetCode108();
+        leetCode108.sortedArrayToBST(num);
     }
 }
 
