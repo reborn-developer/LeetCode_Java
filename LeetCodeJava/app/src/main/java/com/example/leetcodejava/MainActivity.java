@@ -91,9 +91,15 @@ public class MainActivity extends AppCompatActivity {
 //        leetCode242.isAnagram("anagram", "nagaram");
 
 
-        int[] num = {-10, -3, 0 , 5, 9};
-        LeetCode108 leetCode108 = new LeetCode108();
-        leetCode108.sortedArrayToBST(num);
+//        int[] num = {-10, -3, 0 , 5, 9};
+//        LeetCode108 leetCode108 = new LeetCode108();
+//        leetCode108.sortedArrayToBST(num);
+
+//        LeetCode32 leetCode32 = new LeetCode32();
+//        leetCode32.longestValidParentheses(")()())");
+
+        LeetCode44 leetCode44 = new LeetCode44();
+        leetCode44.isMatch("adceb", "*a*b");
     }
 }
 
