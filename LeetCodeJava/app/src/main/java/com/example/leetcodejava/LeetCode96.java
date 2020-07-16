@@ -77,8 +77,8 @@ public class LeetCode96 {
         G[0] = 1;
         G[1] = 1;
 
-        for (int i = 2; i <= n; ++i) {
-            for (int j = 1; j <= i; ++j) {
+        for (int i = 2; i <= n; ++i) {     // i为个数
+            for (int j = 1; j <= i; ++j) { //以第j个为根
                 G[i] += G[j - 1] * G[i - j];
             }
         }
