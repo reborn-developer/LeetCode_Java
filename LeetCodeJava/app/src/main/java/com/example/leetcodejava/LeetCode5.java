@@ -3,7 +3,7 @@ package com.example.leetcodejava;
 public class LeetCode5 {
 
     /**
-     * 5、最长回文子串
+     * 5、最长回文子串    easy
      *
      * 给定一个字符串s，找到s中最长的回文子串。你可以假设s的最大长度为1000。
      * 示例 1：
