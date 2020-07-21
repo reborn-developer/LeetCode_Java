@@ -33,15 +33,49 @@ public class LeetCode215 {
         return nums[nums.length - k];
     }
 
+    /**********************************************方法二*****************************************************************/
     /**
-     * 方法二、堆
-     * 时间复杂度 O(NlogK)，空间复杂度 O(K)。
+     * 方法二、堆排序
+     * 我们也可以使用堆排序来解决这个问题——建立一个大根堆，做 k−1 次删除操作后堆顶元素就是我们要找的答案
      */
-    public int findKtheLargest2(int[] nums, int k) {
-
-        return 1;
+    public int findKthLargest2(int[] nums, int k) {
+        int heapSize = nums.length;
+        buildMaxHeap(nums, heapSize);
+        for (int i = nums.length - 1; i >= nums.length - k + 1; --i) {
+            swap(nums, 0, i);
+            --heapSize;
+            maxHeapify(nums, 0, heapSize);
+        }
+        return nums[0];
     }
 
+    public void buildMaxHeap(int[] a, int heapSize) {
+        for (int i = heapSize / 2; i >= 0; --i) {
+            maxHeapify(a, i, heapSize);
+        }
+    }
+
+    public void maxHeapify(int[] a, int i, int heapSize) {
+        int left = i * 2 + 1, right = i * 2 + 2, largest = i;
+        if (left < heapSize && a[left] > a[largest]) {
+            largest = left;
+        }
+        if (right < heapSize && a[right] > a[largest]) {
+            largest = right;
+        }
+        if (largest != i) {
+            swap(a, i, largest);
+            maxHeapify(a, largest, heapSize);
+        }
+    }
+
+    public void swap(int[] a, int i, int j) {
+        int temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+    }
+
+/**********************************************方法三*****************************************************************/
     /**
      * 方法三、基于快速排序的选择方法
      * 时间复杂度 O(N)，空间复杂度 O(1)
@@ -117,6 +151,7 @@ public class LeetCode215 {
                 int temp = a[start];
                 a[start] = a[end];
                 a[end] = temp;
+
                 //交换后，此时的那个被调换的值也同时调到了正确的位置(基准值右边)，因此右边也要同时向前移动一位
                 end--;
             }
@@ -129,6 +164,7 @@ public class LeetCode215 {
                 int temp = a[start];
                 a[start] = a[end];
                 a[end] = temp;
+
                 //交换后，此时的那个被调换的值也同时调到了正确的位置(基准值左边)，因此左边也要同时向后移动一位
                 start++;
             }
@@ -137,3 +173,5 @@ public class LeetCode215 {
         return end;
     }
 }
+/***************************************************************************************************************/
+
