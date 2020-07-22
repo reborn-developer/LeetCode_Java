@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.leetcodejava.Sort.QuickSort;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -100,6 +102,9 @@ public class MainActivity extends AppCompatActivity {
 
 //        LeetCode44 leetCode44 = new LeetCode44();
 //        leetCode44.isMatch("adceb", "*a*b");
+
+        int[] a = {8,7,6,5,4,3,2,1};
+        QuickSort.quickSort(a, 0, 7);
     }
 }
 
