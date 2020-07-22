@@ -1,6 +1,8 @@
 package com.example.leetcodejava.Sort;
 
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.PriorityQueue;
 import java.util.Random;
 
 public class LeetCode215 {
@@ -76,14 +78,46 @@ public class LeetCode215 {
     }
 
 /**********************************************方法三*****************************************************************/
+
+/**
+ * 方法三、优先队列
+ * 假设数组有 len 个元素。
+ * 思路：把 len 个元素都放入一个最大堆中，然后再 pop() 出 k - 1 个元素，
+ * 因为前 k - 1 大的元素都被弹出了，此时最大堆的堆顶元素就是数组中的第 k 个最大元素。
+ */
+
+public int findKthLargest3(int[] nums, int k) {
+    int len = nums.length;
+    // 使用一个含有 len 个元素的最大堆，lambda 表达式应写成：(a, b) -> b - a
+//    PriorityQueue<Integer> maxHeap = new PriorityQueue<>(len, (a, b) -> b - a);
+    PriorityQueue<Integer> maxHeap = new PriorityQueue<>(len, new Comparator<Integer>() {
+        @Override
+        public int compare(Integer o1, Integer o2) {
+            return o2 - o1;
+        }
+    });
+    for (int i = 0; i < len; i++) {
+        maxHeap.add(nums[i]);
+    }
+    for (int i = 0; i < k - 1; i++) {
+        maxHeap.poll();
+    }
+    //Java中的java.util.PriorityQueue.peek()方法用于检索或获取Queue的第一个元素或Queue头部的元素。
+    // 检索到的元素不会从队列中删除或删除。
+    return maxHeap.peek();
+}
+
+/***************************************************************************************************************/
+
+/**********************************************方法四*****************************************************************/
     /**
-     * 方法三、基于快速排序的选择方法
+     * 方法四、基于快速排序的选择方法
      * 时间复杂度 O(N)，空间复杂度 O(1)
      */
 
     Random random = new Random();
 
-    public int findKtheLargest3(int[] nums, int k) {
+    public int findKtheLargest4(int[] nums, int k) {
 
         int index = nums.length - k;
 
@@ -102,7 +136,7 @@ public class LeetCode215 {
      *
      * 借鉴快速排序的分治思想
      * 因此我们可以改进快速排序算法来解决这个问题：在分解的过程当中，我们会对子数组进行划分，如果划分得到的 q 正好就是我们需要的下标，
-     * 就直接返回 a[q]a[q]；否则，如果 qq 比目标下标小，就递归右子区间，否则递归左子区间。
+     * 就直接返回 a[q]；否则，如果 qq 比目标下标小，就递归右子区间，否则递归左子区间。
      * 这样就可以把原来递归两个区间变成只递归一个区间，提高了时间效率。这就是「快速选择」算法。
      */
     public int quickSelect(int[] a, int left, int right, int index) {
