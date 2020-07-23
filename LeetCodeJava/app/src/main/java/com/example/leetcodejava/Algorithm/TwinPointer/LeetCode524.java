@@ -1,4 +1,4 @@
-package com.example.leetcodejava.TwinPointer;
+package com.example.leetcodejava.Algorithm.Sort.TwinPointer;
 
 import java.util.Collections;
 import java.util.Comparator;

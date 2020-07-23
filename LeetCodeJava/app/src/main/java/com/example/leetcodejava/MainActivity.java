@@ -4,11 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.leetcodejava.Sort.QuickSort;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import com.example.leetcodejava.Algorithm.Sort.BucketSort;
+import com.example.leetcodejava.Algorithm.Sort.QuickSort;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -105,6 +102,9 @@ public class MainActivity extends AppCompatActivity {
 
         int[] a = {8,7,6,5,4,3,2,1};
         QuickSort.quickSort(a, 0, 7);
+
+        double[] b = {4.12, 6.421, 0.0023, 3.0, 2.123,8.122, 4.12};
+        BucketSort.bucketSort(b);
     }
 }
 

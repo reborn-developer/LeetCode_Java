@@ -1,4 +1,4 @@
-package com.example.leetcodejava.Sort;
+package com.example.leetcodejava.Algorithm.Sort;
 
 import java.util.Arrays;
 import java.util.Comparator;

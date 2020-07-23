@@ -1,4 +1,4 @@
-package com.example.leetcodejava.TwinPointer;
+package com.example.leetcodejava.Algorithm.Sort.TwinPointer;
 
 public class LeetCode88 {
     /**

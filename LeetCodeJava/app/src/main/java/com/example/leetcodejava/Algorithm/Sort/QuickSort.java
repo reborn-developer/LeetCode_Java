@@ -1,4 +1,4 @@
-package com.example.leetcodejava.Sort;
+package com.example.leetcodejava.Algorithm.Sort;
 
 /**
  *  快速排序
@@ -85,5 +85,9 @@ public class QuickSort {
         a[start] = a[mark];
         a[mark] = privot;
         return mark;
+    }
+
+    public static class BucketSort {
+
     }
 }

@@ -1,6 +1,5 @@
-package com.example.leetcodejava.TwinPointer;
+package com.example.leetcodejava.Algorithm.Sort.TwinPointer;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 
