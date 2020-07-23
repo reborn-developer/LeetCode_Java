@@ -32,7 +32,6 @@ public class BucketSort {
 
         //2.初始化桶
         // 具体需要建立多少个桶，如何确定桶的区间范围，有很多种不同的方式。我们这里创建的桶数量等于原始数列的元素数量
-
         int bucketNum = array.length;
 
         ArrayList<LinkedList<Double>> bucketList = new ArrayList<LinkedList<Double>>(bucketNum);
