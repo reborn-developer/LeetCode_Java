@@ -1,5 +1,10 @@
 package com.example.leetcodejava.Algorithm.Sort;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class LeetCode451 {
     /**
      *  LeetCode451. 根据字符出现频率排序
@@ -33,7 +38,36 @@ public class LeetCode451 {
      *  此外，"bbaA"也是一个有效的答案，但"Aabb"是不正确的。
      *  注意'A'和'a'被认为是两种不同的字符。
      */
-    public String frequencySort(String s) {
 
+    /**
+     * 思路：桶排序
+     */
+    public String frequencySort(String s) {
+        Map<Character, Integer> map = new HashMap<>();
+        for (char c: s.toCharArray()) {
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+
+        List<Character>[] bucket = new ArrayList[s.length() + 1];
+        for (char c: map.keySet()) {
+            int count = map.get(c);
+            if (bucket[count] == null) {
+                bucket[count] = new ArrayList<>();
+            }
+            bucket[count].add(c);
+        }
+
+        StringBuilder str = new StringBuilder();
+        for (int i = bucket.length - 1; i>= 0; i--) {
+            if (bucket[i] == null) {
+                continue;
+            }
+            for (char c: bucket[i]) {
+                for (int j = 0; j < i; j++) {
+                    str.append(c);
+                }
+            }
+        }
+        return  str.toString();
     }
 }
