@@ -99,7 +99,7 @@ public class LeetCode347 {
      *
      * 定义 i 来接收每个元素的频率，并且元素就按照自己的频率作为数组的下标存储
      *
-     * 最后对数组逆向求出前 k个高频率的元素，放入结果集 ans 即可。
+     * 最后对数组逆向求出前 k个高频率的元素，放入结果集 res 即可。
      */
     public List<Integer> topKFrequent2(int[] nums, int k) {
         List<Integer> res = new ArrayList();
