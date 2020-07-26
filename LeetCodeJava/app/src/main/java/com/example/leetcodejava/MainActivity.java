@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.leetcodejava.Algorithm.Sort.BucketSort;
+import com.example.leetcodejava.Algorithm.Sort.LeetCode75;
 import com.example.leetcodejava.Algorithm.Sort.QuickSort;
 
 public class MainActivity extends AppCompatActivity {
@@ -100,11 +101,15 @@ public class MainActivity extends AppCompatActivity {
 //        LeetCode44 leetCode44 = new LeetCode44();
 //        leetCode44.isMatch("adceb", "*a*b");
 
-        int[] a = {8,7,6,5,4,3,2,1};
-        QuickSort.quickSort(a, 0, 7);
+//        int[] a = {8,7,6,5,4,3,2,1};
+//        QuickSort.quickSort(a, 0, 7);
 
-        double[] b = {4.12, 6.421, 0.0023, 3.0, 2.123,8.122, 4.12};
-        BucketSort.bucketSort(b);
+//        double[] b = {4.12, 6.421, 0.0023, 3.0, 2.123,8.122, 4.12};
+//        BucketSort.bucketSort(b);
+
+        int[] num = {2,0,1,0,2,1,1};
+        LeetCode75 leetCode75 = new LeetCode75();
+        leetCode75.sortColors(num);
     }
 }
 
