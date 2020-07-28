@@ -5,7 +5,7 @@ import java.util.Comparator;
 
 public class LeetCode435 {
     /**
-     *  LeetCode435. 无重叠区间
+     *  LeetCode435. 无重叠区间  Medium
      *
      *  给定一个区间的集合，找到需要移除区间的最小数量，使剩余区间互不重叠。
      *
@@ -41,6 +41,7 @@ public class LeetCode435 {
         if (intervals.length == 0) {
             return 0;
         }
+        // 二位数组个性化排序
 //        Arrays.sort(intervals, Comparator.comparingInt(o -> o[1]));
 
         Arrays.sort(intervals, new Comparator<int[]>() {
@@ -61,4 +62,15 @@ public class LeetCode435 {
         }
         return intervals.length - cnt;
     }
+
+    /**
+     * 使用 lambda 表示式创建 Comparator 会导致算法运行时间过长，如果注重运行时间，可以修改为普通创建 Comparator 语句：
+     *
+     * Arrays.sort(intervals, new Comparator<int[]>() {
+     *     @Override
+     *     public int compare(int[] o1, int[] o2) {
+     *         return o1[1] - o2[1];
+     *     }
+     * });
+     */
 }
