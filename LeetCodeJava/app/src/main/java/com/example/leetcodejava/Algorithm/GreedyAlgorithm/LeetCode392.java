@@ -3,7 +3,7 @@ package com.example.leetcodejava.Algorithm.GreedyAlgorithm;
 public class LeetCode392 {
 
     /**
-     * LeetCode392. 判断子序列
+     * LeetCode392. 判断子序列  Easy
      *
      * 给定字符串 s 和 t ，判断 s 是否为 t 的子序列。
      *
@@ -37,7 +37,6 @@ public class LeetCode392 {
      * 每次贪心地匹配，匹配成功则 i 和 j同时右移，匹配 s的下一个位置，匹配失败则 j右移，i 不变，尝试用 t 的下一个字符匹配 s。
      * 最终如果 ii 移动到 ss 的末尾，就说明 ss 是 tt 的子序列。
      */
-
     public boolean isSubsequence(String s, String t) {
         int n = s.length(), m = t.length();
         int i = 0, j = 0;
