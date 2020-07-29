@@ -2,7 +2,7 @@ package com.example.leetcodejava.Algorithm.GreedyAlgorithm;
 
 public class LeetCode121 {
     /**
-     *  LeetCode121. 买卖股票的最佳时机
+     *  LeetCode121. 买卖股票的最佳时机  Easy
      *
      *  给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。
      *
@@ -21,5 +21,31 @@ public class LeetCode121 {
      *  输出: 0
      *  解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。
      */
-    
+
+    /**
+     * 贪心算法
+     * 思路：只要记录前面的最小价格，将这个最小价格作为买入价格，
+     * 然后将当前的价格作为售出价格，查看当前收益是不是最大收益。
+     */
+    public int maxProfit(int[] prices) {
+        int n = prices.length;
+        if (n == 0) return 0;
+        int min = prices[0];
+        int maxProfit = 0;
+
+        for (int i = 1; i < n; i++) {
+            if (prices[i] < min) {
+                min = prices[i];
+            } else {
+                maxProfit =  Math.max(maxProfit, prices[i] - min);
+            }
+        }
+        return maxProfit;
+    }
+    /**
+     * 复杂度分析
+     *
+     * 时间复杂度：O(n)，只需要遍历一次。
+     * 空间复杂度：O(1)，只使用了常数个变量。
+     */
 }
