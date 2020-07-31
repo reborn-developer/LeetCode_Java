@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.leetcodejava.Algorithm.GreedyAlgorithm.LeetCode763;
 import com.example.leetcodejava.Algorithm.Sort.BucketSort;
 import com.example.leetcodejava.Algorithm.Sort.LeetCode75;
 import com.example.leetcodejava.Algorithm.Sort.QuickSort;
@@ -107,9 +108,12 @@ public class MainActivity extends AppCompatActivity {
 //        double[] b = {4.12, 6.421, 0.0023, 3.0, 2.123,8.122, 4.12};
 //        BucketSort.bucketSort(b);
 
-        int[] num = {2,0,1,0,2,1,1};
-        LeetCode75 leetCode75 = new LeetCode75();
-        leetCode75.sortColors(num);
+//        int[] num = {2,0,1,0,2,1,1};
+//        LeetCode75 leetCode75 = new LeetCode75();
+//        leetCode75.sortColors(num);
+
+        LeetCode763 leetCode763 = new LeetCode763();
+//        leetCode763.char2Index('a');
     }
 }
 
