@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3fa22c4-f922-47fc-b3de-579863698472" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_28" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_XL_API_28" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -32,23 +31,18 @@
     </option>
   </component>
   <component name="ProjectId" id="1fGdEHasaLp1ZZFFRfodtUgXRnS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Nexus_5X_API_28" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-07-29T06:45:50.019Z" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="recommended.upgrade.last.time.stamp" value="1596283769948" />
     <property name="show.migrate.to.gradle.popup" value="false" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -73,6 +67,8 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEBUGGER_TYPE" value="Auto" />
       <Auto>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
@@ -120,5 +116,27 @@
       <updated>1595848249578</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="609" height="153" key="GridCell.Tab.0.bottom" timestamp="1596291768744">
+      <screen x="0" y="23" width="1280" height="721" />
+    </state>
+    <state width="609" height="153" key="GridCell.Tab.0.bottom/0.23.1280.721@0.23.1280.721" timestamp="1596291768744" />
+    <state width="609" height="153" key="GridCell.Tab.0.center" timestamp="1596291768742">
+      <screen x="0" y="23" width="1280" height="721" />
+    </state>
+    <state width="609" height="153" key="GridCell.Tab.0.center/0.23.1280.721@0.23.1280.721" timestamp="1596291768742" />
+    <state width="609" height="153" key="GridCell.Tab.0.left" timestamp="1596291768740">
+      <screen x="0" y="23" width="1280" height="721" />
+    </state>
+    <state width="609" height="153" key="GridCell.Tab.0.left/0.23.1280.721@0.23.1280.721" timestamp="1596291768740" />
+    <state width="609" height="153" key="GridCell.Tab.0.right" timestamp="1596291768743">
+      <screen x="0" y="23" width="1280" height="721" />
+    </state>
+    <state width="609" height="153" key="GridCell.Tab.0.right/0.23.1280.721@0.23.1280.721" timestamp="1596291768743" />
+    <state x="329" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1596283736183">
+      <screen x="0" y="23" width="1280" height="716" />
+    </state>
+    <state x="329" y="192" key="com.intellij.ide.util.TipDialog/0.23.1280.716@0.23.1280.716" timestamp="1596283736183" />
   </component>
 </project>
