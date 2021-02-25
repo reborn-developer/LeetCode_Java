@@ -7,6 +7,7 @@ import android.os.Bundle;
 import com.example.leetcodejava.Algorithm.BinarySearch.LeetCode34;
 import com.example.leetcodejava.Algorithm.GreedyAlgorithm.LeetCode763;
 import com.example.leetcodejava.Algorithm.Search.BFS.LeetCode1091;
+import com.example.leetcodejava.Algorithm.Sort.BubbleSort;
 import com.example.leetcodejava.Algorithm.Sort.BucketSort;
 import com.example.leetcodejava.Algorithm.Sort.LeetCode75;
 import com.example.leetcodejava.Algorithm.Sort.QuickSort;
@@ -120,6 +121,17 @@ public class MainActivity extends AppCompatActivity {
 //        int[] num = {5,7,7,8,8,10};
 //        LeetCode34 leetCode34 = new LeetCode34();
 //        leetCode34.searchRange(num, 8);
+
+
+//        int[] array = {5,8,6,3,9,2,1,7};
+//        BubbleSort.bubbleSort(array);
+//        System.out.println(array);
+//
+//        BubbleSort.bubbleSort2(array);
+//        System.out.println(array);
+
+//        BubbleSort.bubbleSort3(array);
+//        System.out.println(array);
     }
 }
 

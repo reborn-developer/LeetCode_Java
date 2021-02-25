@@ -3,7 +3,7 @@ package com.example.leetcodejava.Algorithm.Sort;
 /**
  *  快速排序
  *
- *  时间复杂度O(logn)
+ *  时间复杂度O(logn),最坏情况下O(n^2)
  */
 public class QuickSort {
 
@@ -85,9 +85,5 @@ public class QuickSort {
         a[start] = a[mark];
         a[mark] = privot;
         return mark;
-    }
-
-    public static class BucketSort {
-
     }
 }
