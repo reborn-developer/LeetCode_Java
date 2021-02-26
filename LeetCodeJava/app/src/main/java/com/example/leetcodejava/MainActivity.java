@@ -9,6 +9,7 @@ import com.example.leetcodejava.Algorithm.GreedyAlgorithm.LeetCode763;
 import com.example.leetcodejava.Algorithm.Search.BFS.LeetCode1091;
 import com.example.leetcodejava.Algorithm.Sort.BubbleSort;
 import com.example.leetcodejava.Algorithm.Sort.BucketSort;
+import com.example.leetcodejava.Algorithm.Sort.HeapSort;
 import com.example.leetcodejava.Algorithm.Sort.LeetCode75;
 import com.example.leetcodejava.Algorithm.Sort.QuickSort;
 import com.example.leetcodejava.DataStructure.BinaryHeap;
@@ -137,14 +138,20 @@ public class MainActivity extends AppCompatActivity {
 //        System.out.println(array);
 
 
+//        int[] array = new int[] {1,3,2,6,5,7,8,9,10,0};
+//        System.out.println(Arrays.toString(array));
+//        BinaryHeap.upAdjust(array);
+//        System.out.println(Arrays.toString(array));
+//
+//        array = new int[] {7,1,3,10,5,2,8,9,6};
+//        System.out.println(Arrays.toString(array));
+//        BinaryHeap.buildHeap(array);
+//        System.out.println(Arrays.toString(array));
+
+
         int[] array = new int[] {1,3,2,6,5,7,8,9,10,0};
         System.out.println(Arrays.toString(array));
-        BinaryHeap.upAdjust(array);
-        System.out.println(Arrays.toString(array));
-
-        array = new int[] {7,1,3,10,5,2,8,9,6};
-        System.out.println(Arrays.toString(array));
-        BinaryHeap.buildHeap(array);
+        HeapSort.heapSort(array);
         System.out.println(Arrays.toString(array));
     }
 }
