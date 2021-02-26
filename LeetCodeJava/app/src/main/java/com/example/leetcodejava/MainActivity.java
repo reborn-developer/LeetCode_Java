@@ -11,6 +11,9 @@ import com.example.leetcodejava.Algorithm.Sort.BubbleSort;
 import com.example.leetcodejava.Algorithm.Sort.BucketSort;
 import com.example.leetcodejava.Algorithm.Sort.LeetCode75;
 import com.example.leetcodejava.Algorithm.Sort.QuickSort;
+import com.example.leetcodejava.DataStructure.BinaryHeap;
+
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -132,6 +135,17 @@ public class MainActivity extends AppCompatActivity {
 
 //        BubbleSort.bubbleSort3(array);
 //        System.out.println(array);
+
+
+        int[] array = new int[] {1,3,2,6,5,7,8,9,10,0};
+        System.out.println(Arrays.toString(array));
+        BinaryHeap.upAdjust(array);
+        System.out.println(Arrays.toString(array));
+
+        array = new int[] {7,1,3,10,5,2,8,9,6};
+        System.out.println(Arrays.toString(array));
+        BinaryHeap.buildHeap(array);
+        System.out.println(Arrays.toString(array));
     }
 }
 
