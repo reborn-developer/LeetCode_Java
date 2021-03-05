@@ -1,6 +1,7 @@
 package com.example.leetcodejava.DataStructure.Tree;
 
 import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -112,6 +113,31 @@ public class BinaryTree {
                 treeNode = treeNode.rightChild;
             }
         }
+    }
+
+    /**
+     * 二叉树层序遍历
+     * @param root 二叉树根节点
+     *
+     * 二叉树同一层次的节点之间是没有直接关联的，如何实现这种层 序遍历呢？
+     * 这里同样需要借助一个数据结构来辅助工作，这个数据结构就是队列
+     */
+    public static void levelOrderTraversal(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        queue.offer(root);
+
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            System.out.println(node.data);
+
+            if (node.leftChild != null) {
+                queue.offer(node.leftChild);
+            }
+            if (node.rightChild != null) {
+                queue.offer(node.rightChild);
+            }
+        }
+
     }
 
 
