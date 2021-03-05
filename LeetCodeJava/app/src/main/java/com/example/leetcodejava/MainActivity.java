@@ -14,11 +14,13 @@ import com.example.leetcodejava.Algorithm.Sort.HeapSort;
 import com.example.leetcodejava.Algorithm.Sort.LeetCode75;
 import com.example.leetcodejava.Algorithm.Sort.QuickSort;
 import com.example.leetcodejava.DataStructure.BinaryHeap;
+import com.example.leetcodejava.DataStructure.Tree.BinaryTree;
+import com.example.leetcodejava.DataStructure.Tree.TreeNode;
 
 import java.util.Arrays;
+import java.util.LinkedList;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -155,9 +157,28 @@ public class MainActivity extends AppCompatActivity {
 //        HeapSort.heapSort(array);
 //        System.out.println(Arrays.toString(array));
 
-        int[] array = new int[]{4,4,6,5,3,2,8,1,7,5,6,0,10};
-        int[] sortedArray = CountSort.countSort(array);
-        System.out.println(Arrays.toString(sortedArray));
+//        int[] array = new int[]{4,4,6,5,3,2,8,1,7,5,6,0,10};
+//        int[] sortedArray = CountSort.countSort(array);
+//        System.out.println(Arrays.toString(sortedArray));
+
+
+//        LinkedList<Integer> inputList = new LinkedList<Integer>(Arrays.asList(new Integer[]{3,2,9,null,null,10,null,null,8,null,4}));
+        LinkedList<Integer> inputList = new LinkedList<Integer>(Arrays.asList(new Integer[]{1,2,3,4,5,null,6}));
+
+        TreeNode treeNode = BinaryTree.createBinaryTree(inputList);
+//        System.out.println("前序遍历:");
+//        BinaryTree.preOrderTraveral(treeNode);
+
+//        System.out.println("中序遍历:");
+//        BinaryTree.inOrderTraveral(treeNode);
+//
+//        System.out.println("后序遍历:");
+//        BinaryTree.postOrderTraveral(treeNode);
+
+        System.out.println("前序遍历非递归:");
+        BinaryTree.preOrderTraveralWithStack(treeNode);
+
+
     }
 }
 
