@@ -13,6 +13,7 @@ import com.example.leetcodejava.Algorithm.Sort.CountSort;
 import com.example.leetcodejava.Algorithm.Sort.HeapSort;
 import com.example.leetcodejava.Algorithm.Sort.LeetCode75;
 import com.example.leetcodejava.Algorithm.Sort.QuickSort;
+import com.example.leetcodejava.Algorithm.Sort.SelectionSort;
 import com.example.leetcodejava.DataStructure.BinaryHeap;
 import com.example.leetcodejava.DataStructure.LinkedList.MyLinkedList;
 import com.example.leetcodejava.DataStructure.Tree.BinaryTree;
@@ -179,9 +180,15 @@ public class MainActivity extends AppCompatActivity {
 //        System.out.println("前序遍历非递归:");
 //        BinaryTree.preOrderTraveralWithStack(treeNode);
 
+//        testLinkedList();
 
+        int[] array = {90,3,2,45,65,33,12};
+        System.out.println("排序前");
+        System.out.println(Arrays.toString(array));
+        SelectionSort.selectSort(array);
+        System.out.println("排序后");
+        System.out.println(Arrays.toString(array));
 
-        testLinkedList();
 
     }
 
