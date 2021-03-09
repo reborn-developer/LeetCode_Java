@@ -14,6 +14,7 @@ import com.example.leetcodejava.Algorithm.Sort.HeapSort;
 import com.example.leetcodejava.Algorithm.Sort.LeetCode75;
 import com.example.leetcodejava.Algorithm.Sort.QuickSort;
 import com.example.leetcodejava.DataStructure.BinaryHeap;
+import com.example.leetcodejava.DataStructure.LinkedList.MyLinkedList;
 import com.example.leetcodejava.DataStructure.Tree.BinaryTree;
 import com.example.leetcodejava.DataStructure.Tree.TreeNode;
 
@@ -163,22 +164,36 @@ public class MainActivity extends AppCompatActivity {
 
 
 //        LinkedList<Integer> inputList = new LinkedList<Integer>(Arrays.asList(new Integer[]{3,2,9,null,null,10,null,null,8,null,4}));
-        LinkedList<Integer> inputList = new LinkedList<Integer>(Arrays.asList(new Integer[]{1,2,3,4,5,null,6}));
-
-        TreeNode treeNode = BinaryTree.createBinaryTree(inputList);
+//        LinkedList<Integer> inputList = new LinkedList<Integer>(Arrays.asList(new Integer[]{1,2,3,4,5,null,6}));
+//
+//        TreeNode treeNode = BinaryTree.createBinaryTree(inputList);
 //        System.out.println("前序遍历:");
 //        BinaryTree.preOrderTraveral(treeNode);
-
+//
 //        System.out.println("中序遍历:");
 //        BinaryTree.inOrderTraveral(treeNode);
 //
 //        System.out.println("后序遍历:");
 //        BinaryTree.postOrderTraveral(treeNode);
+//
+//        System.out.println("前序遍历非递归:");
+//        BinaryTree.preOrderTraveralWithStack(treeNode);
 
-        System.out.println("前序遍历非递归:");
-        BinaryTree.preOrderTraveralWithStack(treeNode);
 
 
+        testLinkedList();
+
+    }
+
+    public static void testLinkedList() {
+        MyLinkedList myLinkedList = new MyLinkedList();
+        myLinkedList.insert(3,0);
+        myLinkedList.insert(7,1);
+        myLinkedList.insert(9,2);
+        myLinkedList.insert(5,3);
+        myLinkedList.insert(6,1);
+        myLinkedList.remove(0);
+        myLinkedList.output();
     }
 }
 

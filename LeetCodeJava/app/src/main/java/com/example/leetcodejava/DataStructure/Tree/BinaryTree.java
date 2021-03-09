@@ -16,7 +16,7 @@ import java.util.Stack;
  *
  * 从更宏观的角度来看，二叉树的遍历归结为两大类。
  * 1. 深度优先遍历（前序遍历、中序遍历、后序遍历)。
- * 2、广度优先遍历（层序遍历)
+ * 2、广度优先遍历（层序遍历）)
  */
 public class BinaryTree {
 
@@ -137,7 +137,6 @@ public class BinaryTree {
                 queue.offer(node.rightChild);
             }
         }
-
     }
 
 
