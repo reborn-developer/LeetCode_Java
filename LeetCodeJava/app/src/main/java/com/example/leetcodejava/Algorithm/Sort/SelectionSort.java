@@ -12,7 +12,6 @@ import java.util.Arrays;
  * 3、重复第二步，直到所有元素均排序完毕。
  */
 
-
 public class SelectionSort {
 
     public static void selectSort(int[] arr) {
