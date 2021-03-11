@@ -13,6 +13,7 @@ import com.example.leetcodejava.Algorithm.Sort.CountSort;
 import com.example.leetcodejava.Algorithm.Sort.HeapSort;
 import com.example.leetcodejava.Algorithm.Sort.InsertionSort;
 import com.example.leetcodejava.Algorithm.Sort.LeetCode75;
+import com.example.leetcodejava.Algorithm.Sort.MergeSort;
 import com.example.leetcodejava.Algorithm.Sort.QuickSort;
 import com.example.leetcodejava.Algorithm.Sort.SelectionSort;
 import com.example.leetcodejava.Algorithm.Sort.ShellSort;
@@ -197,9 +198,15 @@ public class MainActivity extends AppCompatActivity {
 //        System.out.println(Arrays.toString(array));
 
 
-        int[] array = {90,3,2,45,65,33,12};
+//        int[] array = {90,3,2,45,65,33,12};
+//        System.out.println(Arrays.toString(array));
+//        ShellSort.shellSort(array);
+//        System.out.println(Arrays.toString(array));
+
+
+        int[] array = {0,90,3,2,45,65,33,12};
         System.out.println(Arrays.toString(array));
-        ShellSort.shellSort(array);
+        MergeSort.sort(array);
         System.out.println(Arrays.toString(array));
     }
 
