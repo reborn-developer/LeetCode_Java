@@ -1,5 +1,7 @@
 package com.example.leetcodejava.Algorithm.Sort.TwinPointer;
 
+import java.util.List;
+
 public class LeetCode141 {
     /**
      * LeetCode141. 环形链表
@@ -56,5 +58,4 @@ public class LeetCode141 {
         }
         return false;
     }
-
 }

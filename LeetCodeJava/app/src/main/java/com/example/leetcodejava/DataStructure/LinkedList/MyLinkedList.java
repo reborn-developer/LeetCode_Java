@@ -6,10 +6,10 @@ package com.example.leetcodejava.DataStructure.LinkedList;
 public class MyLinkedList {
 
     // 头节点指针
-    private Node head;
+    private ListNode head;
 
     // 尾节点指针
-    private Node last;
+    private ListNode last;
 
     // 链表实际长度
     private int size;
@@ -24,7 +24,7 @@ public class MyLinkedList {
             System.out.println("超出链表节点范围");
         }
 
-        Node insertedNode = new Node(data);
+        ListNode insertedNode = new ListNode(data);
         if (size == 0) {
             // 空链表
             head = insertedNode;
@@ -39,7 +39,7 @@ public class MyLinkedList {
             last = insertedNode;
         } else {
             // 插入中间
-            Node prevNode = get(index - 1);
+            ListNode prevNode = get(index - 1);
             insertedNode.next = prevNode.next;
             prevNode.next = insertedNode;
         }
@@ -50,25 +50,25 @@ public class MyLinkedList {
      * 链表删除元素
      * @param index 删除的位置
      */
-    public Node remove(int index) {
+    public ListNode remove(int index) {
         if (index < 0 || index >= size) {
             System.out.println("超出链表节点范围");
         }
-        Node removedNode = null;
+        ListNode removedNode = null;
         if (index == 0) {
             // 删除头节点
             removedNode = head;
             head = head.next;
         } else if (index == size - 1) {
             // 删除尾节点
-            Node prevNode = get(index - 1);
+            ListNode prevNode = get(index - 1);
             removedNode = prevNode.next;
             prevNode.next = null;
             last = prevNode;
         } else {
             // 删除中间节点
-            Node prevNode = get(index-1);
-            Node nextNode = prevNode.next.next;
+            ListNode prevNode = get(index-1);
+            ListNode nextNode = prevNode.next.next;
             removedNode = prevNode.next;
             prevNode.next = nextNode;
         }
@@ -80,11 +80,11 @@ public class MyLinkedList {
      * 链表查找元素
      * @param index 查找的位置
      */
-    public Node get(int index) {
+    public ListNode get(int index) {
         if (index < 0 || index >= size) {
             System.out.println("超出链表节点范围");
         }
-        Node temp = head;
+        ListNode temp = head;
         for (int i = 0; i < index; i++) {
             temp = temp.next;
         }
@@ -95,7 +95,7 @@ public class MyLinkedList {
      * 输出链表
      */
     public void output() {
-        Node temp = head;
+        ListNode temp = head;
         while (temp != null) {
             System.out.println(temp.data);
             temp = temp.next;

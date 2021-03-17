@@ -3,10 +3,10 @@ package com.example.leetcodejava.DataStructure.LinkedList;
 /**
  *  链表节点
  */
-public class Node {
+public class ListNode {
     int data;
-    Node next;
-    Node(int data) {
+    ListNode next;
+    ListNode(int data) {
         this.data = data;
     }
 }

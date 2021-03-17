@@ -204,10 +204,10 @@ public class MainActivity extends AppCompatActivity {
 //        System.out.println(Arrays.toString(array));
 
 
-        int[] array = {0,90,3,2,45,65,33,12};
-        System.out.println(Arrays.toString(array));
-        MergeSort.sort(array);
-        System.out.println(Arrays.toString(array));
+//        int[] array = {0,90,3,2,45,65,33,12};
+//        System.out.println(Arrays.toString(array));
+//        MergeSort.sort(array);
+//        System.out.println(Arrays.toString(array));
     }
 
     public static void testLinkedList() {
