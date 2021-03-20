@@ -21,6 +21,7 @@ import com.example.leetcodejava.DataStructure.BinaryHeap;
 import com.example.leetcodejava.DataStructure.LinkedList.MyLinkedList;
 import com.example.leetcodejava.DataStructure.Tree.BinaryTree;
 import com.example.leetcodejava.DataStructure.Tree.TreeNode;
+import com.example.leetcodejava.GoodCases.RandomNumber;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -167,10 +168,10 @@ public class MainActivity extends AppCompatActivity {
 //        System.out.println(Arrays.toString(sortedArray));
 
 
-//        LinkedList<Integer> inputList = new LinkedList<Integer>(Arrays.asList(new Integer[]{3,2,9,null,null,10,null,null,8,null,4}));
+        LinkedList<Integer> inputList = new LinkedList<Integer>(Arrays.asList(new Integer[]{3,2,9,null,null,10,null,null,8,null,4}));
 //        LinkedList<Integer> inputList = new LinkedList<Integer>(Arrays.asList(new Integer[]{1,2,3,4,5,null,6}));
 //
-//        TreeNode treeNode = BinaryTree.createBinaryTree(inputList);
+        TreeNode treeNode = BinaryTree.createBinaryTree(inputList);
 //        System.out.println("前序遍历:");
 //        BinaryTree.preOrderTraveral(treeNode);
 //
@@ -179,11 +180,15 @@ public class MainActivity extends AppCompatActivity {
 //
 //        System.out.println("后序遍历:");
 //        BinaryTree.postOrderTraveral(treeNode);
-//
-//        System.out.println("前序遍历非递归:");
-//        BinaryTree.preOrderTraveralWithStack(treeNode);
 
-//        testLinkedList();
+        System.out.println("前序遍历非递归:");
+//        BinaryTree.preOrderTraveralWithStack(treeNode);
+        BinaryTree.preWithStack(treeNode);
+
+//        System.out.println("中序遍历非递归:");
+
+
+        testLinkedList();
 
 //        int[] array = {90,3,2,45,65,33,12};
 //        System.out.println("排序前");
@@ -208,6 +213,12 @@ public class MainActivity extends AppCompatActivity {
 //        System.out.println(Arrays.toString(array));
 //        MergeSort.sort(array);
 //        System.out.println(Arrays.toString(array));
+
+//        RandomNumber.test1();
+//        RandomNumber.test2();
+//        RandomNumber.test4();
+
+
     }
 
     public static void testLinkedList() {
@@ -220,5 +231,7 @@ public class MainActivity extends AppCompatActivity {
         myLinkedList.remove(0);
         myLinkedList.output();
     }
+
+
 }
 

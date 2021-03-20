@@ -19,7 +19,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_XL_API_28" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -75,7 +75,6 @@
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -84,6 +83,8 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEBUGGER_TYPE" value="Auto" />
       <Auto>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
@@ -109,16 +110,11 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
-        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
-        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
-      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
-      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -138,33 +134,37 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="402" key="GridCell.Tab.0.bottom" timestamp="1615891007384">
-      <screen x="-1920" y="-115" width="1920" height="1080" />
+    <state width="1484" height="518" key="GridCell.Tab.0.bottom" timestamp="1616134909666">
+      <screen x="-1920" y="-92" width="1920" height="1057" />
     </state>
     <state width="1878" height="402" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-115.1920.1080@-1920.-115.1920.1080" timestamp="1615891007384" />
     <state width="1398" height="263" key="GridCell.Tab.0.bottom/0.23.1440.822/-1920.-115.1920.1080@-1920.-115.1920.1080" timestamp="1614824650985" />
-    <state width="1381" height="212" key="GridCell.Tab.0.bottom/0.23.1440.822/-1920.-92.1920.1057@-1920.-92.1920.1057" timestamp="1615347659383" />
-    <state width="1878" height="402" key="GridCell.Tab.0.center" timestamp="1615891007382">
-      <screen x="-1920" y="-115" width="1920" height="1080" />
+    <state width="1484" height="518" key="GridCell.Tab.0.bottom/0.23.1440.822/-1920.-92.1920.1057@-1920.-92.1920.1057" timestamp="1616134909666" />
+    <state width="1484" height="518" key="GridCell.Tab.0.center" timestamp="1616134909665">
+      <screen x="-1920" y="-92" width="1920" height="1057" />
     </state>
     <state width="1878" height="402" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-115.1920.1080@-1920.-115.1920.1080" timestamp="1615891007382" />
     <state width="1398" height="263" key="GridCell.Tab.0.center/0.23.1440.822/-1920.-115.1920.1080@-1920.-115.1920.1080" timestamp="1614824650983" />
-    <state width="1381" height="212" key="GridCell.Tab.0.center/0.23.1440.822/-1920.-92.1920.1057@-1920.-92.1920.1057" timestamp="1615347659381" />
-    <state width="1878" height="402" key="GridCell.Tab.0.left" timestamp="1615891007381">
-      <screen x="-1920" y="-115" width="1920" height="1080" />
+    <state width="1484" height="518" key="GridCell.Tab.0.center/0.23.1440.822/-1920.-92.1920.1057@-1920.-92.1920.1057" timestamp="1616134909665" />
+    <state width="1484" height="518" key="GridCell.Tab.0.left" timestamp="1616134909664">
+      <screen x="-1920" y="-92" width="1920" height="1057" />
     </state>
     <state width="1878" height="402" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-115.1920.1080@-1920.-115.1920.1080" timestamp="1615891007381" />
     <state width="1398" height="263" key="GridCell.Tab.0.left/0.23.1440.822/-1920.-115.1920.1080@-1920.-115.1920.1080" timestamp="1614824650982" />
-    <state width="1381" height="212" key="GridCell.Tab.0.left/0.23.1440.822/-1920.-92.1920.1057@-1920.-92.1920.1057" timestamp="1615347659381" />
-    <state width="1878" height="402" key="GridCell.Tab.0.right" timestamp="1615891007383">
-      <screen x="-1920" y="-115" width="1920" height="1080" />
+    <state width="1484" height="518" key="GridCell.Tab.0.left/0.23.1440.822/-1920.-92.1920.1057@-1920.-92.1920.1057" timestamp="1616134909664" />
+    <state width="1484" height="518" key="GridCell.Tab.0.right" timestamp="1616134909665">
+      <screen x="-1920" y="-92" width="1920" height="1057" />
     </state>
     <state width="1878" height="402" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-115.1920.1080@-1920.-115.1920.1080" timestamp="1615891007383" />
     <state width="1398" height="263" key="GridCell.Tab.0.right/0.23.1440.822/-1920.-115.1920.1080@-1920.-115.1920.1080" timestamp="1614824650984" />
-    <state width="1381" height="212" key="GridCell.Tab.0.right/0.23.1440.822/-1920.-92.1920.1057@-1920.-92.1920.1057" timestamp="1615347659382" />
+    <state width="1484" height="518" key="GridCell.Tab.0.right/0.23.1440.822/-1920.-92.1920.1057@-1920.-92.1920.1057" timestamp="1616134909665" />
     <state x="-1502" y="29" key="SettingsEditor" timestamp="1615346117477">
       <screen x="-1920" y="-92" width="1920" height="1057" />
     </state>
     <state x="-1502" y="29" key="SettingsEditor/0.23.1440.822/-1920.-92.1920.1057@-1920.-92.1920.1057" timestamp="1615346117477" />
+    <state x="329" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1616205579259">
+      <screen x="0" y="23" width="1280" height="710" />
+    </state>
+    <state x="329" y="192" key="com.intellij.ide.util.TipDialog/0.23.1280.710@0.23.1280.710" timestamp="1616205579259" />
   </component>
 </project>
